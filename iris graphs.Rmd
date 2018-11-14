@@ -1,0 +1,20 @@
+---
+title: "Iris_Graphs"
+author: "Chase Brewster"
+date: "11/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+
+View(iris)
+
+iris_petal <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
+
+iris_petal
+```
+
